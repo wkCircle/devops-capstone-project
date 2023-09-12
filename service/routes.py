@@ -61,7 +61,17 @@ def create_accounts():
 # LIST ALL ACCOUNTS
 ######################################################################
 
-# ... place you code here to LIST accounts ...
+@app.route("/accounts", methods=["GET"])
+def list_accounts(): 
+    """
+    List all Accounts
+    This endpoint will list all Accounts
+    """
+    app.logger.info("Request to list Accounts")
+    accounts = Account.all()
+    account_list = list(map(lambda acc: acc.serialize(), accounts))
+    app.logger.info("Returning [%s] accounts", len(account_list))
+    return (jsonify(account_list), status.HTTP_200_OK)
 
 
 ######################################################################
@@ -69,7 +79,11 @@ def create_accounts():
 ######################################################################
 
 @app.route("/accounts/<int:account_id>")
-def read_account(account_id): 
+def get_accounts(account_id): 
+    """
+    Reads an Account
+    This endpoint will read an Account based the account_id that is requested
+    """
     app.logger.info("Request to read an Account with id: %s", account_id)
     account = Account.find(account_id) 
     if not account: 
