@@ -1,0 +1,5 @@
+# Introduction to Containers w/ Docker, Kubernetes & OpenShift (No. 9, IBM DevOps & Sofrware Engineering)
+## Hands-on Lab Tutorials (Selected)
+- [Week 3: Examples of Pipes](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-LX0117EN-SkillsNetwork/labs/module%201/pipes-reading.md.html?origin=www.coursera.org)
+- [Week 3: Bash Scripting Advanced](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-LX0117EN-SkillsNetwork/labs/Bash%20Scripting/Bash%20Scripting%20Advanced/Bash%20Scripting%20Advanced.md.html)
+- [Week 3: Linux and Bash Command Cheat Sheet: The Basics](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-LX0117EN-SkillsNetwork/labs/module%201/ShellCommandsCheatSheet.md.html?origin=www.coursera.org)
